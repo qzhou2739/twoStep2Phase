@@ -55,9 +55,9 @@ For outcome-dependent data produced by the package generators, specify
 \code{stratum = "stratum"}.}
 \item{intercept}{Logical value indicating whether an intercept is included in
 the linear or logistic outcome model. The default is \code{FALSE}. When
-\code{TRUE}, the intercept is included in the complete-case model, the default
-working outcome model, and every requested conditional-\code{x} estimating
-equation. This argument is not available for the Cox model.}
+\code{TRUE}, an intercept is included in the outcome model of interest
+and in all working outcome models used to construct the update estimators.
+This argument is not available for the Cox model.}
 \item{x_models}{Working models for the conditional distribution of
 \code{x} given the available Phase I auxiliary variables: \code{x_star}, when
 supplied, together with the variables in \code{z}.
