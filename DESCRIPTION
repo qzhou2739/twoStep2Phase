@@ -1,0 +1,27 @@
+Package: twoStep2Phase
+Title: Two-Step Estimation for Two-Phase Studies
+Version: 0.0.27
+Authors@R: c(
+    person(given = "Q.", family = "Zhou", role = c("aut", "cre"), email = "qzhou8@charlotte.edu"),
+    person(given = "K. Y.", family = "Wong", role = "aut", email = "kin-yau.wong@polyu.edu.hk")
+  )
+Author: Q. Zhou [aut, cre],
+    K. Y. Wong [aut]
+Maintainer: Q. Zhou <qzhou8@charlotte.edu>
+Description: Utilities and prototype estimators for the two-step update
+    estimation approach described in "An optimal two-step estimation approach
+    for two-phase studies". The package wraps the supplied simulation code into
+    reusable functions for linear, logistic, and Cox outcomes with an expensive
+    covariate, optional surrogate and cheap auxiliary covariates, and two-phase
+    sampling. Linear and logistic outcome models may include an intercept.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports: gam, glmnet, nleqslv, numDeriv, Rcpp, statmod, stats, survival
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: MASS, testthat (>= 3.0.0)
+Config/testthat/edition: 3
+NeedsCompilation: yes
+Packaged: 2026-09-20 09:56:40 UTC; R
